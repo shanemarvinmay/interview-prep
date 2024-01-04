@@ -1,7 +1,7 @@
 def urlify(s):
     string_builder = []
     url_space_char_needed = False
-    
+
     s = s.strip()
     for ltr in s:
         if ltr != ' ':
