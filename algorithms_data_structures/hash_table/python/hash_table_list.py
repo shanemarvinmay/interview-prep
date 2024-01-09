@@ -1,7 +1,7 @@
 class HashTableList:
     '''This is an implementation of Hash Table using lists in python.'''
     def __init__(self):
-        self.list = [[]] * 100
+        self.list = [[]] * 1_000
 
     def set(self, key, value):
         key = hash(key)
