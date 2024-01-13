@@ -13,3 +13,7 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [CodeForces](https://codeforces.com/){:target="_blank"}
 * [Project Euler](https://projecteuler.net/archives){:target="_blank"}
 * [Advent of Code](https://adventofcode.com){:target="_blank"}
+
+# Personal Interest to look into
+- mapbox
+- interview pen ($100 for lifetime access) for coding and system design interviews
