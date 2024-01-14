@@ -15,6 +15,8 @@
 * BAD: just setting up services/db as is with first design will cause a lot of congestion as things get busy
     * Any one of the requirements being executed would need to hit many of the components before being completed.
     * Answer: "Event bus" Kafka handles events. Takes in needed info from sources. Stores information needed by any service for any CRUD operation.
+* Horizontal Scaling: Using more machines and duplicates
+* Vertical Scaling: Using more resources on one machine?
 
 ## Technologies and Terms to Look up:
 kafka ("event bus")
@@ -60,7 +62,46 @@ Http Poling: a few ways to get data (- latency)
     - Good: Resource can send payloads to client as it sees fit
     - Bad: Tieing up a connection on both ends at all times
 
-sharding database 
+Sharding Database: Spliting database into logical sections on different machines
+- <a href="https://youtu.be/XP98YCr-iXQ?si=Nb_MLFlrd5Js2zbT" target="_blank">Source</a>
+- Data is replicated over several shards. 
+    - So if one shard is lost...
+        - you still have your data to serve
+        - you don't permanently loose the data
+- Reasons to use:
+    - Good response time becaues there is less data to search through
+    - Helps prevent total serice outages. 
+    - You cannot continuosly vertically scale data. There is only some much storage space on a machine.
+- Database is Sharded into Partitions
+    - Logical Shard: database shard (partition)
+    - Physical Shard: Node (machine)
+    - Different Logical Shards run on different Nodes 
+        - Nodes can have multiple Logical Shards
+    - Shard Key: columns in database used to shard database
+        - Shard Key can be a column in the table or a new one can be created
+- "Shared-Nothing Architure": Physical Shards run indepentently and do no interact with eachother
+    - This is the architecture type of a sharded database
+    - Software Layer: abstract layer that is managing the Physical Shards
+- Ways to shard:
+    - Range-Based Sharding: bucketizing data based based on a range. An example should be, sharding users be the letter of their first name. One shard gets A-I, the next gets J-S, and the last gets T-Z.
+        - One issue with Range-Based Sharding is that one bucket could get way more than the others
+    - Hashed Sharding: bucketizing data based on a hash function that is performed on the row.
+        - Good thing: This helps ensure that each shard is around the same size
+        - Bad thing: Harder to scale (harder to change the logic to decide how the buckets should be chosen?) And the hash value doesn't represent any business logic.
+    - Directory Sharding: Uses a look up table to decide what shard the row should go into. 
+        - Good thing: This is very flexible
+        - Bad thing: The look up table is the single point of failure. So if it is unavailable or wrong, then everything comes to a hault. (Why not just duplicate it then?)
+    - Geo Sharding: Sharding data rows based on the location they are associated with. The data doesn't have to contain location information. It could simply be about a user in a certain region, or something like that.
+        - Good thing: This enables low latency
+        - Bad thing: The shards may not all be the same size. One shard may be much larger than the others..
+- Database Hotspot: When one shard is overloaded (so this could mean other shards are underloaded). This defeats the purpoes of a sharded database.
+    - Could occure when the Shard Key and Sharding method was poorly chosen.
+- Cardinatity: How many possible values there are. So for booleans, the cardinality is 2.
+    - This is something to consider when picking a Shard Key. You don't want a Shard Key that has too few possible values.
+- Monotonic Change! It is good to think about how often your Shard Key can change.
+    - For example if your Shard Key is the number of purchases a use makes, it will change frequently over time.
+
+
 - shard id (primary key)
 
 webhook
