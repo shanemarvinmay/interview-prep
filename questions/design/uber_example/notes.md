@@ -100,9 +100,7 @@ Sharding Database: Spliting database into logical sections on different machines
     - This is something to consider when picking a Shard Key. You don't want a Shard Key that has too few possible values.
 - Monotonic Change! It is good to think about how often your Shard Key can change.
     - For example if your Shard Key is the number of purchases a use makes, it will change frequently over time.
-
-
-- shard id (primary key)
+- Shard Key could be the primary key
 
 webhook
 
@@ -111,5 +109,5 @@ redis db
 spark
 
 Topic:
-- redundancy (for failure)
+- Redundancy (for failure)
 
