@@ -40,9 +40,25 @@ kafka ("event bus")
         - Each duplicate Partition is on a different Broker
 - handles events
 
-http poling (- latency)
-
-web sockets 
+Http Poling: a few ways to get data (- latency)
+- - <a href="https://youtu.be/ZBM28ZPlin8?si=ZGRNYujRxo227bZP" target="_blank">Source</a>
+- Short Polling: (bad design) 
+    - Client constantly makes requests to the Resource (server/service)
+    - Resource will give and empty reponse or a payload like a JSON obj
+    - Client may have object thats hooked up to the Resources respones
+    - Good: if you have a really long delay in network calls. Also if the payload is small
+    - Bad: constantly using resources on the Client and Resource 
+- Long Polling: (good idea to use when there is little traffic)
+    - Client will make a request to the Resource
+    - Resource will keep the connection open, and respond with the payload when it is available.
+    - Good: less resources. 
+    - Bad: Tieing up a connection on both ends (how limited is the number of connections?) ? fault prone ? 
+- Web Sockets: When you need low latency, or need to push updates to multiple clients (like in a chatroom)
+    - A connection is established between the Client and Resource that is bidirectional
+    - Resource controlls connection 
+    - Resource send updates and information to Client when data becomes available or is updated on the backend
+    - Good: Resource can send payloads to client as it sees fit
+    - Bad: Tieing up a connection on both ends at all times
 
 sharding database 
 - shard id (primary key)
