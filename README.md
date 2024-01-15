@@ -2,7 +2,7 @@
 This is where I am keeping track of the interview prep questions and studies I am doing.
 
 ## Coding Problem Sources
-* <a href="leetcode.com/problemset/algorithms/?page=1&status=NOT_STARTED&sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJBQ19SQVRFIn1d&difficulty=EASY" target="_blank">Leetcode</a>
+* <a href="https://leetcode.com/problemset/algorithms/?page=1&status=NOT_STARTED&&difficulty=EASY" target="_blank">Leetcode</a>
 * <a href="www.hackerrank.com/interview/interview-preparation-kit" target="_blank">HackerRank Interview Prep</a>
 * <a href="www.hackerrank.com/domains/data-structures?filters%5Bstatus%5D%5B%5D=unsolved&filters%5Bdifficulty%5D%5B%5D=easy&filters%5Bdifficulty%5D%5B%5D=medium" target="_blank">HackerRank Algorithm Questions</a>
 * <a href="www.hackerrank.com/domains/algorithms?filters%5Bstatus%5D%5B%5D=unsolved&filters%5Bdifficulty%5D%5B%5D=easy&filters%5Bdifficulty%5D%5B%5D=medium" target="_blank">HackerRank Data Structure Questions</a>
