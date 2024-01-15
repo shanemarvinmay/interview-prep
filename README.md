@@ -14,6 +14,13 @@ This is where I am keeping track of the interview prep questions and studies I a
 * <a href="projecteuler.net/archives" target="_blank">Project Euler</a>
 * <a href="adventofcode.com" target="_blank">Advent of Code</a>
 
+### SQL Sources
+* [W3Schools](https://www.w3schools.com/sql/default.asp)
+* [Strata Scratch](https://platform.stratascratch.com/coding?code_type=1&difficulties=1)
+* [Leetcode](https://leetcode.com/problemset/database/?difficulty=EASY&page=1&sorting=W3sic29ydE9yZGVyIjoiREVTQ0VORElORyIsIm9yZGVyQnkiOiJBQ19SQVRFIn1d)
+* [HackerRank](https://www.hackerrank.com/domains/sql?filters%5Bdifficulty%5D%5B%5D=easy)
+* [Practice SQL](https://www.sql-practice.com/)
+
 ## Work to Redo
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
