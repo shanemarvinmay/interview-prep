@@ -47,6 +47,12 @@ This is where I am keeping track of the interview prep questions and studies I a
     * https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/submissions/1145098602/ (done in swift, check submission)
     * https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem?h_l=interview&isFullScreen=true&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=sorting
 
+## Jobs Resources
+* [LinkedIn](https://www.linkedin.com/jobs/search/?currentJobId=3732095325&distance=25&f_AL=true&f_WT=2%2C1%2C3&geoId=90000084&keywords=software%20engineer&origin=JOBS_HOME_KEYWORD_HISTORY&refresh=true)
+* [Indeed](https://www.indeed.com/jobs?q=software+engineer&l=94089&from=searchOnHP&vjk=b8fa52ae32f5605e)
+* [Ziprecruter](https://www.ziprecruter.com/jobseeker/home)
+* [Glassdoor](https://www.glassdoor.com/Job/software-engineer-jobs-SRCH_KO0,17.htm)
+
 ## Personal Interest to look into
 - mapbox
 - interview pen ($100 for lifetime access) for coding and system design interviews
