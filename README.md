@@ -55,6 +55,7 @@ This is where I am keeping track of the interview prep questions and studies I a
     * https://leetcode.com/problems/reverse-prefix-of-word/submissions/1146986270/ 
     * https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/submissions/1147080430/
     * https://leetcode.com/problems/sort-the-people/submissions/1147899046/
+    * https://leetcode.com/problems/max-increase-to-keep-city-skyline/submissions/1147936862/
     * https://www.hackerrank.com/challenges/fraudulent-activity-notifications/problem?h_l=interview&isFullScreen=true&playlist_slugs%5B%5D%5B%5D=interview-preparation-kit&playlist_slugs%5B%5D%5B%5D=sorting
     
 
