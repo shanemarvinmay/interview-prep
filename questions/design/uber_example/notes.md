@@ -30,7 +30,7 @@ kafka ("event bus")
             - Offset: uniquely identifies a Record in a Partition (queue). It is determined by topic and Partition number
         - Partition Key: thing that the queues are split on (like game type)
             - Partition Key is random if one is not specified
-        - Broken: a machine holding Partitions
+        - Broker : a machine holding Partitions
         - Topic: group of Partitions holding the same type of data (event type)
 - Can create many duplicate consumers, working in parrallel and distributed on many machines
     - Consumers Group
