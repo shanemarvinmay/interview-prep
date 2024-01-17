@@ -36,5 +36,3 @@ def partition_linked_list(head, partition):
     itr.next = None
 
     return head, equal_greater_head
-
-        
