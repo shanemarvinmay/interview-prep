@@ -22,3 +22,6 @@ examples but failed for 15. So this is to ensure the new solution works.
 '''
 def test_pivot_integer_no_mid_solution(pivot_integer):
     assert pivot_integer(15) == -1
+
+def test_pivot_integer_one(pivot_integer):
+    assert pivot_integer(1) == 1
