@@ -27,6 +27,9 @@ def partition_linked_list(head, partition):
     if equal_greater is None and less is None:
         return head, None
     
+    if equal_greater == head:
+        return None, equal_greater
+    
     # Finding the head of the right.
     itr = head
     while itr.next and itr.next.value < partition:

@@ -21,14 +21,10 @@ def list_to_linked_list(l):
     return head
 
 def assert_partitions(less, equal_greater, partition):
-    # print('less')
     while less:
-        # print(less.value)
         assert less.value < partition
         less = less.next
-    # print('equal_greater')
     while equal_greater:
-        # print(equal_greater.value)
         assert equal_greater.value >= partition
         equal_greater = equal_greater.next
 
