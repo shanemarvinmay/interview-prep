@@ -1,4 +1,4 @@
-from math import log10, ceil
+# Check out the textbook solution: https://github.com/careercup/CtCI-6th-Edition-Python/blob/e6bc732588601d0a98e5b1bc44d83644b910978d/Chapter2/5_Sum_Lists.py
 
 class Node:
     def __init__(self, val):
@@ -55,4 +55,24 @@ def list_to_num(head):
         num = num * 10 + i
 
     return num
+
+def reverse_list(head):
+    if head is None:
+        return None
+    prev, cur, next = None, head, head.next
+    while next:
+        cur.next = prev
+        prev = cur
+        cur = next
+        next = next.next
+    cur.next = prev
+    return cur
         
+def sum_list_follow_up(head1, head2):
+    # Reverse lists
+    head1 = reverse_list(head1)
+    head2 = reverse_list(head2)
+    # Call sum_list
+    head1 = sum_list(head1, head2)
+    # Reverse list representing the sum
+    return reverse_list(head1)
