@@ -103,11 +103,32 @@ Sharding Database: Spliting database into logical sections on different machines
 - Shard Key could be the primary key
 
 webhook
+- Opposite of api. API is you hitting a service, Webhook is you telling a service to hit you up when something happens.
+    - so if you have a payment service like stripe. When a use checks out, the webhook you have set up with stripe will let you know when a transaction happens.
 
-redis db
+redis db: cache db instance running on RAM for speed
+- Usefulness: hitting services then DB can be slow, RAM is fast. So data queried recently is stored in a Redis instance
+- Multiple web servers can use 1 Redis instance running on a server
+- Cache Miss: Client/User makes a request for data, but doesn't find it in the Redis db instance. So a request needs to be made to the db.
+    - When a Cache Miss happens, the data is stored in the Redis db instance so this doesn't happen again.
+- Cache Hit: Client/User makes a request for data, and quickly finds it in the Redis db instance.
+- Cache Worker: monitors db for changes. When a change occures in the db, the Cache Worker stores a copy of that data in the Redis db instance.
+- Ways to deploy a Redis instance:
+    - Docker Container
+    - Cloud Provider Managing your Redis instance (AWS, Azure, GCP)
 
-spark
+Spark
+- Processing big data that can't fit on one machine.
 
 Topic:
 - Redundancy (for failure)
 
+EC2 (Elastic Compute Cloud)
+- AWS Server.
+
+exponential backoff
+- if something goes wrong with a network request, you can retry the requestion over an over again with an exponentially increasing pause in between
+    - 2 seconds pause after the first failure
+    - 4 seconds pause after the third
+    - the 8 seconds
+    - and so on...
