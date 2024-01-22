@@ -43,7 +43,7 @@ kafka ("event bus")
 - handles events
 
 Http Poling: a few ways to get data (- latency)
-- - <a href="https://youtu.be/ZBM28ZPlin8?si=ZGRNYujRxo227bZP" target="_blank">Source</a>
+- <a href="https://youtu.be/ZBM28ZPlin8?si=ZGRNYujRxo227bZP" target="_blank">Source</a>
 - Short Polling: (bad design) 
     - Client constantly makes requests to the Resource (server/service)
     - Resource will give and empty reponse or a payload like a JSON obj

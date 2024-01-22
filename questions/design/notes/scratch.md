@@ -19,7 +19,8 @@ Topic:
 - redundancy (for failure)
 
 
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+-------------
+
 gradient descent
 
 bias / variance trade off
@@ -38,7 +39,10 @@ no labels, what do you do
 
 confusion matrix (error matrix)
 - tp, fn
-- ?! f1 scores !?
+- f1 scores (f measure, f score)
+    - ```2 * (precision * recall) / (precision + recall) ```
+    - balance between precision and recall
+    - good for imbalanced datasets
 - accuracy: how correct is the model overall
     - useful when classes are blanced, but maybe not if you want your model to predict something that isn't balanced. like spam, 90% emails are not spam, so the real world data isn't balanced.
         - so if the model just always said the email wasn't spam, the accuracy would look GREAT! but it could also be just saying everything isn't spam and still getting the 90%
@@ -63,6 +67,8 @@ outliers and anoymolies
 - anomoly: you would really never expected it
 
 ? knn ?
+- supervised classifier that isn't a parametric line
+- uses proximity to make predictions (clusters)
 
 grid search
 - how to find hperparameters
