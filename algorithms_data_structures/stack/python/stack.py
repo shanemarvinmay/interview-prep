@@ -1,5 +1,5 @@
 class Stack:
-    '''This is the Stack classed implemented in python with nodes.
+    '''This is the Stack classed implement in python with nodes.
 
     Nodes are being used here since the list (vector) implementation is already done in python.'''
 
