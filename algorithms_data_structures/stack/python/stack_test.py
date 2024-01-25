@@ -1,7 +1,5 @@
 from stack import Stack
 
-import pytest
-
 def test_push_pop():
     stack = Stack()
 
