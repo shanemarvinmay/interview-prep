@@ -47,14 +47,59 @@ availability and consistency
             - Active Active Replication: ? more active servers come onlin if needed ?
               
 
-polling vs streaming
+# Polling vs Streaming
+## Long and Short Polling
+(See uber_example Http Polling notes)
+## Server Sent Events (SSE)
+- Client makes a request to a server and makes a "connection"
+    -"connection" is basically saying "heres my address, send me updates"
+- After initial "connection" is made, data only flows from the server to the client
+- Server then sends updates to the clients as they occure 
+- Eventualy the server will send a final message canceling the "connection"
+- ! Can only have 6 connections to a client !
+- Done with http like polling (short and long)
+## WebSockets
+- Handshack occures between the client and the server over http. Addresses are exchanged
+- Then TCP messages can be quickly sent back and forth between the client and the server
+    - Port 443 is used (80 if not TLS encrypted)
+- Really fast (good for gaming)
+- ! Firewalls sometimes block the ports needed for websockets !
+### Different than webhooks!
+- webhooks is when a service has an address that doesn't change
+- webhooks send information in one direction.
+## Streaming
+- encoder
+- RTMP (Real-Time Messaging Protocol)
+    - TCP based protocol
+    - RTMPS: the S stands for secure
+- SRT (Secure Reliale Transport)
+    - new, and could replace rtmp
+    - udp based and not tcp
+    - lower latency than 
+    - generally not supported yet.
+- PoP Server (Point-of-Presence)
+    - ? server that processes and packages the video ?
+    - stream quality to determined
+    - segmentation: video broken into couple second chunks
+    - packages segments into:
+        - HSL (HTTP Live Streaming)
+            - most popular
+            - manifest file says what order the segments go in
+            - video segments go with the file
+        - DASH (Dynamic Adatpive Streaming over HTTP)
+    - packages are cached along the way
 
-messaing patterns
-asynchronism
 
-load balancing
+? messaging patterns ?
 
-caching
+asynchronism (I think I know it)
+
+# load balancing (just skimmed it)
+- round robin
+- least load
+- url ip hashing
+
+# caching
 - clients
 - servers
 - in memory
@@ -62,6 +107,73 @@ caching
 - eviction policy
 - cnd
 - what info will be stored
+## info notes
+- top non functional requirement goals
+    - scalability
+    - availability
+    - performance (speed)
+    - durability (if you need to save data)
+- Least Recently Used Cache
+    - local cache
+        - hash table in memory
+    - eviction policy ! (to ensure hashtable doesn't fill up)
+        - aka Replacement Policies
+        - least recently used policy: remove oldest data
+            - queue, to keep track of newest and oldest data
+                - doubly linked list
+                - Implimentation is in screenshot in this dir
+    - distributed cache
+        - Share cache with some logical partition
+        - Dedicated Cache Cluster: services and cache shards are on different hardward
+            - benefit: services and caches can scale independently 
+        - Co-Located Cache: services and cache shards share hardware.
+            - benefit: saves on hardware cost
+- hashing
+    - MOD hashing: the hashing you used when building a hashtable
+        - issue with caching: what happens when a shard goes down or gets added? this could cause services to hit the wrong caches and result in many cache misses.
+    - ! Consistent hashing ! : hashing something constant, like IP address. Then everything in range from some-ip's hash and the next hash, belong to that ip address. (pic in this dir to help explain)
+        - Issues !
+            - when a Cache Server goes down, all of its load is dumped onto the next Cache Server
+            - hashes don't ensure that each Cache Server has the same load. One Cache Server might end up with 90% of the load
+- Cache Client
+    - live in service
+    - knows about all Cache Servers (shards)
+        - all Cache Clients will know about all Cache Servers
+    - address of Cache Servers are stored in sorted order by hash value
+        - like in a tree map
+    - binary search it usd to find the right Cache Server to use
+    - TCP or UDP are used to talk to Cache Servers
+    - if Cache Server is unavailable, client proceeds as if it was a cache miss
+        - Resiliant
+    - How Cache Clients know about Cache Servers
+        1. ip address of Cache Servers are stored in storage.
+            - Cache Client then queries storage to get current list
+        2. Configuration Service: is a services that keeps track of Cache Servers.
+            - Cache client reaches out to Configuration Service to find the right Cache Server
+            - Configuration Services get heartbeats from Cache Servers to make sure they are available
+            - benefit: this helps us find new Cache Servers as they come
+            - benefit: if a Cache Server dies or is taken down, the Configuration Services will redirect as needed
+- High availability (durability)
+    - Leader-Follower
+        - Leader handles put requests, and so, has data
+        - Followers do their best to be replicas of the leaders.
+        - Followers handle get requests.
+        - illustration in this dir.
+- Consistency vs Availability:
+    - caches are focused on providing speed so availability will be prefered over consistence
+        - consistency issue (in Leader-Follower) since Followers handle only get requests, they might not have the latest data the Leader has. So the data might be old.
+- Data Expiration:
+    - if cache never fills, should the data stay in there forever
+        - might want to consider a TTL policy
+- check local cache, if miss, check cache server
+- security. set up firewall so only approved clients can access ports on cache server
+    - encrypt and decrypt data
+- monitor and logging
+    - latency
+    - caches hits and misses
+
+
+? Daemon process ? 
 
 consistent hashing
 
@@ -88,9 +200,10 @@ youtue resources
 - gaurav sen 
 - tech dummies narenda l
 
-Grikking the system design interview - no free
+Grikking the system design interview - not free
 
 algo expert - not free
+
 -------------
 
 gradient descent
