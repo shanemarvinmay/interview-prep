@@ -69,3 +69,10 @@ This is where I am keeping track of the interview prep questions and studies I a
 ## Personal Interest to look into
 - mapbox
 - interview pen ($100 for lifetime access) for coding and system design interviews
+
+## Working with Dependencies in Python
+* Before starting I recommend being in a virtual environment
+* Install package cmd:
+`python3 -m pip3 install SomePackage`
+* Run your file
+`py your_file.py`
