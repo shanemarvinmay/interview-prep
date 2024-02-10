@@ -67,6 +67,8 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Glassdoor](https://www.glassdoor.com/Job/software-engineer-jobs-SRCH_KO0,17.htm)
 
 ## Personal Interest to look into
+- Poetry: Python dependency manager and packager
+    - useful for using a makefile
 - mapbox
 - interview pen ($100 for lifetime access) for coding and system design interviews
 
