@@ -78,3 +78,8 @@ This is where I am keeping track of the interview prep questions and studies I a
 `python3 -m pip3 install SomePackage`
 * Run your file
 `py your_file.py`
+
+## Repos to move/integrate/assimilate here
+* [interview-prep](https://github.com/shanemarvinmay/interview-prep)
+* [python-algorithms](https://github.com/shanemarvinmay/python-algorithms/tree/master)
+* [coding_problems](https://github.com/shanemarvinmay/coding_problems)
