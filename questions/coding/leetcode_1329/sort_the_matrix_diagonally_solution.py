@@ -1,28 +1,30 @@
 from collections import namedtuple
-
+Coord = namedtuple('coord', ['row', 'col'])
 class Solution:
-    def diagonal_merge_sort(self, mat):
+    def coord_is_in_range(self, coord, mat):
+        '''Returns True if coord is not out of range of matrix.'''
+        return coord[0] < len(mat) and coord[1] < len(mat[0])
+
+    def diagonalSort(self, mat: list[list[int]], start_coord=None) -> list[list[int]]:
         '''Break apart mat rows to do merge sort. Then when bringing them
         together, sort by every diagonal.
         '''
         if len(mat) < 2:
             return
-        Coord = namedtuple('coord', ['row', 'col'])
+        start_coord = Coord(row=0, col=0) if start_coord is None else start_coord
         mid = len(mat) // 2
         left = mat[:mid]
         right = mat[mid]
-        self.diagonal_merge_sort(left)
-        self.diagonal_merge_sort(right)
+        self.diagonalSort(left, start_coord)
+        self.diagonalSort(right, Coord(row=mid, col=0))
 
         # Sort every diagonal line
-        mat_coord = Coord(row=0, col=0)
-        left_end_cord = Coord(row=len(left), col=len(left[0]))
-        right_end_cord = Coord(row=len(right), col=len(right[0]))
+        mat_coord = start_coord
         for col in range(len(left)):
             left_coord = Coord(row=0, col=col)
-            # right's col must always be one more than
-            right_coord = Coord(row=0, col=1)
-            while left_coord < left_end_cord and right_coord < right_end_cord:
+            # right's col must always be the next number in the diagonal
+            right_coord = Coord(row=0, col=col+len(left))
+            while self.coord_is_in_range(left_coord, left) and self.coord_is_in_range(right_coord, right):
                 if left[left_coord.row, left_coord.col] < right[right_coord.row, right_coord.col]:
                     mat[mat_coord.row][mat_coord.col] = left[left_coord.row, left_coord.col]
                     left_coord = Coord(row=left_coord.row + 1, col=left_coord.col + 1)
@@ -31,9 +33,15 @@ class Solution:
                     right_coord = Coord(row=right_coord.row + 1, col=right_coord.col + 1)
                 mat_coord = Coord(row=mat_coord.row + 1, col=mat_coord.col + 1)
         
-        # Add the leftovers
-        # for left
-        # for right
-    def diagonalSort(self, mat: list[list[int]]) -> list[list[int]]:
-        '''TODO: put merge sort code here (you don't need the extra function).'''
-        pass
+            # Add the leftovers
+            while self.coord_is_in_range(left_coord, left):
+                mat[mat_coord.row][mat_coord.col] = left[left_coord.row, left_coord.col]
+                left_coord = Coord(row=left_coord.row + 1, col=left_coord.col + 1)
+                mat_coord = Coord(row=mat_coord.row + 1, col=mat_coord.col + 1)
+            # for right
+            while self.coord_is_in_range(right_coord, right):
+                mat[mat_coord.row][mat_coord.col] = right[right_coord.row, right_coord.col]
+                right_coord = Coord(row=right_coord.row + 1, col=right_coord.col + 1)
+                mat_coord = Coord(row=mat_coord.row + 1, col=mat_coord.col + 1)
+        
+        return mat
