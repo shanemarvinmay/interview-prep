@@ -19,18 +19,6 @@ def list_to_binary_tree(input_list):
 
     return root
 
-
-def binary_tree_to_list(root, input_list=[]):
-    if root.left:
-        binary_tree_to_list(root.left)
-
-    input_list.append(root.value)
-
-    if root.right:
-        binary_tree_to_list(root.right)
-
-    return input_list
-
 @pytest.mark.parametrize('p, q, expected, message', [
     ([0,1,2], [0,1,2], True, 'Same trees with children - True'),
     ([0,1,None,2], [0,1,2], False, 'Diff shape - False'),
