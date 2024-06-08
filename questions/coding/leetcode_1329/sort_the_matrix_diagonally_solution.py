@@ -37,14 +37,16 @@ class Solution:
 
     def get_partition(self, start, end, mat):
         partition_value = mat[end.row][end.col]
-        greater = start
-        less_equal = start
+        greater = Coord(row=start.row, col=start.col)
+        less_equal = Coord(row=start.row, col=start.col)
         while less_equal.row < end.row and less_equal.col < end.row:
             if mat[less_equal.row][less_equal.col] <= partition_value:
                 # Swapping greater and less_equal
                 temp = mat[less_equal.row][less_equal.col]
                 mat[less_equal.row][less_equal.col] = mat[greater.row][greater.col]
                 mat[greater.row][greater.col] = temp
+                greater.row += 1
+                greater.col += 1
             less_equal.row += 1
             less_equal.col += 1
         # Swap pivot and greater than values

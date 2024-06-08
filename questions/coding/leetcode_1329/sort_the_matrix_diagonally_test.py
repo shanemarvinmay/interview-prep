@@ -3,6 +3,13 @@ from sort_the_matrix_diagonally_solution import Solution, Coord
 import pytest
 
 @pytest.fixture()
+def square_matrix():
+	return [
+		[1,3,3],
+		[3,3,2],
+		[3,2,2]		
+	]
+@pytest.fixture()
 def wide_matrix():
 	return [
 		[3,3,1,1],
@@ -49,3 +56,13 @@ def test_get_end_of_diagonal(message, mat, start_coord, expected, request):
 	assert got.row == expected.row, message
 	assert got.col == expected.col, message
 
+def test_get_partition(square_matrix):
+	solution = Solution()
+	expected = Coord(row=1, col=1)
+	start = Coord(row=0, col=0)
+	end = Coord(row=2, col=2)
+	
+	got = solution.get_partition(start, end, square_matrix)
+
+	assert got.row == expected.row
+	assert got.col == expected.col
