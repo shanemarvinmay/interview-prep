@@ -25,7 +25,12 @@ def tall_matrix():
 		[3,2,1],
 		[3,2,1]		
 	]
-
+expected = [
+		[1,2,3],
+		[1,2,3],
+		[2,2,3],
+		[3,3,3]
+	]
 def test_diagonal_sort():
 	expected = [
 		[1,1,1,1],
@@ -42,6 +47,19 @@ def test_diagonal_sort():
 	solution.diagonalSort(matrix)
 
 	assert matrix == expected
+
+def test_sort_diagonal(tall_matrix):
+	solution = Solution()
+	expected = [
+		[1,3,3],
+		[3,2,2],
+		[3,2,3],
+		[3,2,1]
+	]
+
+	solution.sort_diagonal(tall_matrix, Coord(row=0, col=0))
+
+	assert tall_matrix == expected
 
 @pytest.mark.parametrize("message, mat, start_coord, expected", [
 	("Start in bottom corner.", "tall_matrix", Coord(row=3, col=0), Coord(row=3, col=0)),
@@ -61,7 +79,7 @@ def test_get_partition(square_matrix):
 	expected = Coord(row=1, col=1)
 	start = Coord(row=0, col=0)
 	end = Coord(row=2, col=2)
-	
+
 	got = solution.get_partition(start, end, square_matrix)
 
 	assert got.row == expected.row
