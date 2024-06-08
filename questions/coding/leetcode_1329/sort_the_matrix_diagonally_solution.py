@@ -1,47 +1,54 @@
+from typing import List
 from collections import namedtuple
-Coord = namedtuple('coord', ['row', 'col'])
+
+class Coord:
+    def __init__(self, row, col):
+        self.row = row
+        self.col = col
+
 class Solution:
-    def coord_is_in_range(self, coord, mat):
-        '''Returns True if coord is not out of range of matrix.'''
-        return coord[0] < len(mat) and coord[1] < len(mat[0])
-
-    def diagonalSort(self, mat: list[list[int]], start_coord=None) -> list[list[int]]:
-        '''Break apart mat rows to do merge sort. Then when bringing them
-        together, sort by every diagonal.
-        '''
-        if len(mat) < 2:
-            return
-        start_coord = Coord(row=0, col=0) if start_coord is None else start_coord
-        mid = len(mat) // 2
-        left = mat[:mid]
-        right = mat[mid]
-        self.diagonalSort(left, start_coord)
-        self.diagonalSort(right, Coord(row=mid, col=0))
-
-        # Sort every diagonal line
-        mat_coord = start_coord
-        for col in range(len(left)):
-            left_coord = Coord(row=0, col=col)
-            # right's col must always be the next number in the diagonal
-            right_coord = Coord(row=0, col=col+len(left))
-            while self.coord_is_in_range(left_coord, left) and self.coord_is_in_range(right_coord, right):
-                if left[left_coord.row, left_coord.col] < right[right_coord.row, right_coord.col]:
-                    mat[mat_coord.row][mat_coord.col] = left[left_coord.row, left_coord.col]
-                    left_coord = Coord(row=left_coord.row + 1, col=left_coord.col + 1)
-                else:
-                    mat[mat_coord.row][mat_coord.col] = right[right_coord.row, right_coord.col]
-                    right_coord = Coord(row=right_coord.row + 1, col=right_coord.col + 1)
-                mat_coord = Coord(row=mat_coord.row + 1, col=mat_coord.col + 1)
+    def diagonalSort(self, mat: List[List[int]]) -> List[List[int]]:
+        # Sort diagonals that start from first column
+        for row in range(len(mat)):
+            start_coord = Coord(row=row, col=0)
+            end_row = len(mat) - 1
+            end_col = row - len(mat) - 1
+            end_coord = Coord(row=end_row, col=end_col)
+            self.sort_diagonal(mat, start_coord, end_coord)
+        # Sort diagonals that start from top row
+        for col in range(len(mat[0])):
+            start_coord = Coord(row=0, col=col)
+            self.sort_diagonal(mat, start_coord)
         
-            # Add the leftovers
-            while self.coord_is_in_range(left_coord, left):
-                mat[mat_coord.row][mat_coord.col] = left[left_coord.row, left_coord.col]
-                left_coord = Coord(row=left_coord.row + 1, col=left_coord.col + 1)
-                mat_coord = Coord(row=mat_coord.row + 1, col=mat_coord.col + 1)
-            # for right
-            while self.coord_is_in_range(right_coord, right):
-                mat[mat_coord.row][mat_coord.col] = right[right_coord.row, right_coord.col]
-                right_coord = Coord(row=right_coord.row + 1, col=right_coord.col + 1)
-                mat_coord = Coord(row=mat_coord.row + 1, col=mat_coord.col + 1)
-        
-        return mat
+    def sort_diagonal(self, mat, start_coord: Coord, end_coord=None):
+        if end_coord is None:
+            end_coord = self.get_end_of_diagonal(mat, start_coord)
+        if start_coord.row < end_coord.row and start_coord.col < end_coord.col:
+            partition_coord = self.get_partition(start_coord, end_coord, mat)
+            self.sort_diagonal(mat, start_coord, Coord(partition_coord.row-1, partition_coord.col-1))
+            self.sort_diagonal(mat, Coord(partition_coord.row+1, partition_coord.col+1), end_coord)
+    
+    def get_end_of_diagonal(self, mat, start_coord):
+        end_coord = Coord(start_coord.row, start_coord.col)
+        while end_coord.row < len(mat) - 1 and end_coord.col < len(mat[end_coord.row]) - 1:
+            end_coord.row += 1
+            end_coord.col += 1
+        return end_coord
+
+    def get_partition(self, start, end, mat):
+        partition_value = mat[end.row][end.col]
+        greater = start
+        less_equal = start
+        while less_equal.row < end.row and less_equal.col < end.row:
+            if mat[less_equal.row][less_equal.col] <= partition_value:
+                # Swapping greater and less_equal
+                temp = mat[less_equal.row][less_equal.col]
+                mat[less_equal.row][less_equal.col] = mat[greater.row][greater.col]
+                mat[greater.row][greater.col] = temp
+            less_equal.row += 1
+            less_equal.col += 1
+        # Swap pivot and greater than values
+        temp = mat[end.row][end.col]
+        mat[end.row][end.col] = mat[greater.row][greater.col]
+        mat[greater.row][greater.col] = temp
+        return greater
