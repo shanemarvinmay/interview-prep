@@ -25,28 +25,32 @@ def tall_matrix():
 		[3,2,1],
 		[3,2,1]		
 	]
-expected = [
+
+@pytest.mark.parametrize("mat, expected", [
+	("square_matrix", [
+		[1,2,3],
+		[2,2,3],
+		[3,3,3]
+	]),
+	("wide_matrix", [
+		[1,1,1,1],
+		[1,2,2,2],
+		[1,2,3,3]
+	]),
+	("tall_matrix", [
 		[1,2,3],
 		[1,2,3],
 		[2,2,3],
 		[3,3,3]
-	]
-def test_diagonal_sort():
-	expected = [
-		[1,1,1,1],
-		[1,2,2,2],
-		[1,2,3,3]
-	]
-	matrix = [
-		[3,3,1,1],
-		[2,2,1,2],
-		[1,1,1,2]
-	]
+	])
+])
+def test_diagonal_sort(mat, expected, request):
 	solution = Solution()
+	mat = request.getfixturevalue(mat)
 
-	solution.diagonalSort(matrix)
+	solution.diagonalSort(mat)
 
-	assert matrix == expected
+	assert mat == expected
 
 def test_sort_diagonal(tall_matrix):
 	solution = Solution()

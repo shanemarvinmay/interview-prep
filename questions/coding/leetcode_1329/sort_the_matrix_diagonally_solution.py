@@ -11,10 +11,7 @@ class Solution:
         # Sort diagonals that start from first column
         for row in range(len(mat)):
             start_coord = Coord(row=row, col=0)
-            end_row = len(mat) - 1
-            end_col = row - len(mat) - 1
-            end_coord = Coord(row=end_row, col=end_col)
-            self.sort_diagonal(mat, start_coord, end_coord)
+            self.sort_diagonal(mat, start_coord)
         # Sort diagonals that start from top row
         for col in range(len(mat[0])):
             start_coord = Coord(row=0, col=col)
@@ -39,7 +36,7 @@ class Solution:
         partition_value = mat[end.row][end.col]
         greater = Coord(row=start.row, col=start.col)
         less_equal = Coord(row=start.row, col=start.col)
-        while less_equal.row < end.row and less_equal.col < end.row:
+        while less_equal.row < end.row and less_equal.col < end.col:
             if mat[less_equal.row][less_equal.col] <= partition_value:
                 # Swapping greater and less_equal
                 temp = mat[less_equal.row][less_equal.col]
