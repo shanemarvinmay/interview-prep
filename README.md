@@ -23,6 +23,8 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Practice SQL](https://www.sql-practice.com/)
 
 ## Work to Redo
+### Redo with Better Solution
+* [Leetcode 1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/)
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
     * [Queue](https://github.com/shanemarvinmay/python-algorithms/blob/master/Queue/queue.py)
@@ -67,8 +69,6 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Glassdoor](https://www.glassdoor.com/Job/software-engineer-jobs-SRCH_KO0,17.htm)
 
 ## Personal Interest to look into
-- Poetry: Python dependency manager and packager
-    - useful for using a makefile
 - mapbox
 - interview pen ($100 for lifetime access) for coding and system design interviews
 
