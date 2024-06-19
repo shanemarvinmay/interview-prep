@@ -30,6 +30,7 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Leetcode 1382. Balance a Binary Search Tree](https://leetcode.com/problems/balance-a-binary-search-tree/description/)
 * [Leetcode 1669. Merge In Between Linked Lists](https://leetcode.com/problems/merge-in-between-linked-lists/description/)
 * [Leetcode 1877. Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description/)
+* [Leetcode 861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
