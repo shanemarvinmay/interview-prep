@@ -32,6 +32,7 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Leetcode 1877. Minimize Maximum Pair Sum in Array](https://leetcode.com/problems/minimize-maximum-pair-sum-in-array/description/)
 * [Leetcode 861. Score After Flipping Matrix](https://leetcode.com/problems/score-after-flipping-matrix/description/)
 * [Leetcode 763. Partition Labels](https://leetcode.com/problems/partition-labels/description/)
+* [Leetcode 1026. Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/)
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
