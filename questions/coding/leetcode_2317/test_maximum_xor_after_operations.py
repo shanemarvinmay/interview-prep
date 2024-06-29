@@ -1,4 +1,4 @@
-from solution import Solution
+from maximum_xor_after_operations import Solution
 
 
 def test_sol():
