@@ -27,10 +27,13 @@ class Solution:
 	def helper(self, n, forest, tree=None, cur=None):
 		if tree is None:
 			tree = [0]
+			n -= 1
 		if cur is None:
 			cur = 0
-
-		if (cur == 0 and n < 3) or n < 2:
+		# Can this just check if n == 0?
+		if n < 2:
+			if tree not in forest:
+				forest.append(tree)
 			return
 		
 		left = cur * 2 + 1
@@ -40,13 +43,10 @@ class Solution:
 			tree.append(None)
 		tree[left] = 0
 		tree[right] = 0
-
+		# Making a copy of the tree to add children to the right instead of the left.
+		tree_copy = deepcopy(tree)
 		self.helper(n-2, forest, tree, left)
-		if n - 2 > 0:
-			tree_copy = deepcopy(tree)
-			self.helper(n-2, forest, tree_copy, right)
-		
-		forest.append(tree)
+		self.helper(n-2, forest, tree_copy, right)
             
 	def make_binary_tree_from_list(self, tree_list, idx=0):
 		if idx >= len(tree_list) or tree_list[idx] is None:
