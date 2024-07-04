@@ -10,44 +10,38 @@ class TreeNode:
         
 class Solution:
 	def __init__(self):
-		self.n_to_forest = dict()
+		self.n_to_forest = {1:[[0]], 3:[[0,0,0]]}
 		
 	def allPossibleFBT(self, n: int) -> List[Optional[TreeNode]]:
+		if n % 2 == 0:
+			return []
 		if n in self.n_to_forest:
 			return self.n_to_forest[n]
 		
-		forest = []
-		if n % 2:
-			self.helper(n, forest)
-
-		self.n_to_forest[n] = forest
-
-		return forest
+		for i in range(5, n+1, 2):
+			self.n_to_forest[i] = []
+			for tree in self.n_to_forest[i-2]:
+				self.make_forest(tree, cur=0, num_trees=i)	
 		
-	def helper(self, n, forest, tree=None, cur=None):
-		if tree is None:
-			tree = [0]
-			n -= 1
-		if cur is None:
-			cur = 0
-		# Can this just check if n == 0?
-		if n < 2:
-			if tree not in forest:
-				forest.append(tree)
-			return
-		
+		return self.n_to_forest[n]
+
+	def make_forest(self, tree, cur, num_trees):
 		left = cur * 2 + 1
 		right = cur * 2 + 2
-
-		while right >= len(tree):
-			tree.append(None)
-		tree[left] = 0
-		tree[right] = 0
-		# Making a copy of the tree to add children to the right instead of the left.
+		if right < len(tree) and tree[left] is not None and tree[right] is not None:
+			self.make_forest(tree, left, num_trees)
+			self.make_forest(tree, right, num_trees)
+			return
+		
 		tree_copy = deepcopy(tree)
-		self.helper(n-2, forest, tree, left)
-		self.helper(n-2, forest, tree_copy, right)
-            
+		# Append childrend to cur node in tree
+		while right >= len(tree_copy):
+			tree_copy.append(None)
+		tree_copy[left] = 0
+		tree_copy[right] = 0
+		if tree_copy not in self.n_to_forest[num_trees]:
+			self.n_to_forest[num_trees].append(tree_copy)
+
 	def make_binary_tree_from_list(self, tree_list, idx=0):
 		if idx >= len(tree_list) or tree_list[idx] is None:
 			return

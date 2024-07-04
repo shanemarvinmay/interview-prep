@@ -6,26 +6,21 @@ import pytest
 def sol():
 	return Solution()
 
-# test allPossibleFBT
-'''
-Input: n = 7
-Output: 
 
-Input: n = 3
-Output: [[0,0,0]]'''
 @pytest.mark.parametrize("n, expected", [
 	(7, [
 		[0,0,0,0,0,None,None,0,0],
 		[0,0,0,0,0,None,None,None,None,0,0],
-		[0,0,0,None,None,0,0,None,None,0,0],
-		[0,0,0,None,None,0,0,0,0],
 		[0,0,0,0,0,0,0],
+		[0,0,0,None,None,0,0,None,None,None,None,0,0],
+		[0,0,0,None,None,0,0,None,None,None,None,None,None,0,0],
 	]),
-	# (5, [
-	# 	[0,0,0,0,0],
-	# 	[0,0,0,None,None,0,0]
-	# ]),
-	# (3, [[0,0,0]])
+	(5, [
+		[0,0,0,0,0],
+		[0,0,0,None,None,0,0]
+	]),
+	(3, [[0,0,0]]),
+	(14, []),
 ])
 def test_all_possible_fbt(n, expected, sol):
 	got = sol.allPossibleFBT(n)
