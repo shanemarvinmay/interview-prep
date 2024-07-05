@@ -35,7 +35,7 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Leetcode 1026. Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/description/)
 * [Leetcode 2657. Find the Prefix Common Array of Two Arrays](https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/)
 * [Leetcode 894. All Possible Full Binary Trees](https://leetcode.com/problems/all-possible-full-binary-trees/description/)
-* Leetcode 797 (do a BFS)
+* [Leetcode 797. All Paths From Source to Target (do a BFS too!)](https://leetcode.com/problems/all-paths-from-source-to-target/description/)
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
