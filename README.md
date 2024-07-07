@@ -38,6 +38,7 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Leetcode 797. All Paths From Source to Target (do a BFS too!)](https://leetcode.com/problems/all-paths-from-source-to-target/description/)
 * [Leetcode 1008. Construct Binary Search Tree from Preorder Traversal](https://leetcode.com/problems/construct-binary-search-tree-from-preorder-traversal/description/)
 * [Leetcode 2785. Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/)
+* [Leetcode 3211. Generate Binary Strings Without Adjacent Zeros](https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/description/)
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
