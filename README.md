@@ -40,6 +40,7 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Leetcode 2785. Sort Vowels in a String](https://leetcode.com/problems/sort-vowels-in-a-string/description/)
 * [Leetcode 3211. Generate Binary Strings Without Adjacent Zeros](https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/description/)
 * [Leetcode 2120. Execution of All Suffix Instructions Staying in a Grid](https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/description/)
+* [Leetcode 1823. Find the Winner of the Circular Game](https://leetcode.com/problems/find-the-winner-of-the-circular-game/description/)
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
