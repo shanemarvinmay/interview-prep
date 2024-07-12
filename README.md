@@ -44,6 +44,7 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Leetcode 2130. Maximum Twin Sum of a Linked List](https://leetcode.com/problems/maximum-twin-sum-of-a-linked-list/description/)
 * [Leetcode 1817. Finding the Users Active Minutes](https://leetcode.com/problems/finding-the-users-active-minutes/description/)
 * [Leetcode 1441. Build an Array With Stack Operations](https://leetcode.com/problems/build-an-array-with-stack-operations/description/)
+* [Leetcode 2079. Watering Plants](2079. Watering Plants)
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
