@@ -48,6 +48,7 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Leetcode 2442. Count Number of Distinct Integers After Reverse Operations](https://leetcode.com/problems/count-number-of-distinct-integers-after-reverse-operations/description/)
 * [Leetcode 78. Subsets](https://leetcode.com/problems/subsets/description/)
 * [Leetcode 46. Permutations](https://leetcode.com/problems/permutations/description/)
+* [Leetcode 2221. Find Triangular Sum of an Array](https://leetcode.com/problems/find-triangular-sum-of-an-array/description/)
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
