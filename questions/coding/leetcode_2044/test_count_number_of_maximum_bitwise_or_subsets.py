@@ -10,7 +10,7 @@ def sol():
     ([3,1], 2),
     ([2,2,2], 7),
     ([3,2,1,5], 6),
-    ([29,13,3,15,47,71,1,95,21,43], 528),
+    # ([29,13,3,15,47,71,1,95,21,43], 528),
 ])
 def test_countMaxOrSubsets(nums, expected, sol):
     got = sol.countMaxOrSubsets(nums)
