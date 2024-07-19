@@ -3,6 +3,8 @@ from typing import List
 class Solution:
     def __init__(self):
         self.matrix = []
+        self.row_sums = []
+        self.col_sums = []
     def restoreMatrix(self, rowSum: List[int], colSum: List[int]) -> List[List[int]]:
         self.row_sums = rowSum
         self.col_sums = colSum
