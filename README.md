@@ -59,6 +59,8 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [Leetcode 1261. Find Elements in a Contaminated Binary Tree](https://leetcode.com/problems/find-elements-in-a-contaminated-binary-tree)
 1605. Find Valid Matrix Given Row and Column Sums
 https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/
+1829. Maximum XOR for Each Query
+https://leetcode.com/problems/maximum-xor-for-each-query/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
