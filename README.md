@@ -65,6 +65,9 @@ https://leetcode.com/problems/maximum-xor-for-each-query/
 https://leetcode.com/problems/removing-stars-from-a-string/
 1992. Find All Groups of Farmland
 https://leetcode.com/problems/find-all-groups-of-farmland/
+442. Find All Duplicates in an Array
+https://leetcode.com/problems/find-all-duplicates-in-an-array/
+
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
