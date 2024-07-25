@@ -61,6 +61,10 @@ This is where I am keeping track of the interview prep questions and studies I a
 https://leetcode.com/problems/find-valid-matrix-given-row-and-column-sums/
 1829. Maximum XOR for Each Query
 https://leetcode.com/problems/maximum-xor-for-each-query/
+2390. Removing Stars From a String
+https://leetcode.com/problems/removing-stars-from-a-string/
+1992. Find All Groups of Farmland
+https://leetcode.com/problems/find-all-groups-of-farmland/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
