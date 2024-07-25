@@ -16,8 +16,3 @@ def test_findFarmland(land, expected, sol):
     got = sol.findFarmland(land)
 
     assert got == expected
-'''
-[
-[1, 0, 0, 0]
-]
-'''
