@@ -67,7 +67,8 @@ https://leetcode.com/problems/removing-stars-from-a-string/
 https://leetcode.com/problems/find-all-groups-of-farmland/
 442. Find All Duplicates in an Array
 https://leetcode.com/problems/find-all-duplicates-in-an-array/
-
+890. Find and Replace Pattern
+https://leetcode.com/problems/find-and-replace-pattern/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
