@@ -69,6 +69,8 @@ https://leetcode.com/problems/find-all-groups-of-farmland/
 https://leetcode.com/problems/find-all-duplicates-in-an-array/
 890. Find and Replace Pattern
 https://leetcode.com/problems/find-and-replace-pattern/
+979. Distribute Coins in Binary Tree
+https://leetcode.com/problems/distribute-coins-in-binary-tree/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
