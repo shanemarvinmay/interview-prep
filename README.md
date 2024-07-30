@@ -71,6 +71,8 @@ https://leetcode.com/problems/find-all-duplicates-in-an-array/
 https://leetcode.com/problems/find-and-replace-pattern/
 979. Distribute Coins in Binary Tree
 https://leetcode.com/problems/distribute-coins-in-binary-tree/
+1043. Partition Array for Maximum Sum
+https://leetcode.com/problems/partition-array-for-maximum-sum/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
