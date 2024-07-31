@@ -73,6 +73,8 @@ https://leetcode.com/problems/find-and-replace-pattern/
 https://leetcode.com/problems/distribute-coins-in-binary-tree/
 1043. Partition Array for Maximum Sum
 https://leetcode.com/problems/partition-array-for-maximum-sum/
+1061. Lexicographically Smallest Equivalent String
+https://leetcode.com/problems/lexicographically-smallest-equivalent-string/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
