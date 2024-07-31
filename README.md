@@ -75,6 +75,10 @@ https://leetcode.com/problems/distribute-coins-in-binary-tree/
 https://leetcode.com/problems/partition-array-for-maximum-sum/
 1061. Lexicographically Smallest Equivalent String
 https://leetcode.com/problems/lexicographically-smallest-equivalent-string/
+811. Subdomain Visit Count
+https://leetcode.com/problems/subdomain-visit-count/
+2375. Construct Smallest Number From DI String
+https://leetcode.com/problems/construct-smallest-number-from-di-string/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
