@@ -79,6 +79,8 @@ https://leetcode.com/problems/lexicographically-smallest-equivalent-string/
 https://leetcode.com/problems/subdomain-visit-count/
 2375. Construct Smallest Number From DI String
 https://leetcode.com/problems/construct-smallest-number-from-di-string/description/
+427. Construct Quad Tree
+https://leetcode.com/problems/construct-quad-tree/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
