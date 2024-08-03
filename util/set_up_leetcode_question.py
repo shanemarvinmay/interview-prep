@@ -4,7 +4,7 @@ import os
 cwd = os.getcwd()
 print(f'cwd:{cwd}')
 
-raw_input = '427. Construct Quad Tree' # input("Enter leetcode number and title e.g.:'427. Construct Quad Tree'\n")
+raw_input = input("Enter leetcode number and title e.g.:'427. Construct Quad Tree'\n")
 
 num, title = raw_input.split('.', 1)
 title = title.strip()
