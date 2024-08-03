@@ -81,6 +81,8 @@ https://leetcode.com/problems/subdomain-visit-count/
 https://leetcode.com/problems/construct-smallest-number-from-di-string/description/
 427. Construct Quad Tree
 https://leetcode.com/problems/construct-quad-tree/description/
+1314. Matrix Block Sum
+https://leetcode.com/problems/matrix-block-sum/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
