@@ -85,6 +85,8 @@ https://leetcode.com/problems/construct-quad-tree/description/
 https://leetcode.com/problems/matrix-block-sum/description/
 419. Battleships in a Board
 https://leetcode.com/problems/battleships-in-a-board/description/
+3239. Minimum Number of Flips to Make Binary Grid Palindromic I
+https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/submissions/1344404404/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
