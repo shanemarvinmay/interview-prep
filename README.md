@@ -93,6 +93,8 @@ https://leetcode.com/problems/count-square-submatrices-with-all-ones/description
 https://leetcode.com/problems/rotate-image/description/
 2326. Spiral Matrix IV
 https://leetcode.com/problems/spiral-matrix-iv/submissions/1348198027/
+22. Generate Parentheses
+https://leetcode.com/problems/generate-parentheses/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
