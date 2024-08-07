@@ -89,6 +89,8 @@ https://leetcode.com/problems/battleships-in-a-board/description/
 https://leetcode.com/problems/minimum-number-of-flips-to-make-binary-grid-palindromic-i/submissions/1344404404/
 1277. Count Square Submatrices with All Ones
 https://leetcode.com/problems/count-square-submatrices-with-all-ones/description/
+48. Rotate Image
+https://leetcode.com/problems/rotate-image/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
