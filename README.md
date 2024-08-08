@@ -95,6 +95,8 @@ https://leetcode.com/problems/rotate-image/description/
 https://leetcode.com/problems/spiral-matrix-iv/submissions/1348198027/
 22. Generate Parentheses
 https://leetcode.com/problems/generate-parentheses/description/
+3016. Minimum Number of Pushes to Type Word II
+https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/submissions/1349354169/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
