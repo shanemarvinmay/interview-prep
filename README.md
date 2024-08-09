@@ -97,6 +97,8 @@ https://leetcode.com/problems/spiral-matrix-iv/submissions/1348198027/
 https://leetcode.com/problems/generate-parentheses/description/
 3016. Minimum Number of Pushes to Type Word II
 https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/submissions/1349354169/
+885. Spiral Matrix III
+https://leetcode.com/problems/spiral-matrix-iii/submissions/1350474465/?envType=daily-question&envId=2024-08-08
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
