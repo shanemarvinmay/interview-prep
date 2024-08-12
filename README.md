@@ -101,6 +101,8 @@ https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-ii/submissio
 https://leetcode.com/problems/spiral-matrix-iii/submissions/1350474465/?envType=daily-question&envId=2024-08-08
 2023. Number of Pairs of Strings With Concatenation Equal to Target
 https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/submissions/1351134623/
+1418. Display Table of Food Orders in a Restaurant
+https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
