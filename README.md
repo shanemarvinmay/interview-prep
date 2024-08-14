@@ -103,6 +103,8 @@ https://leetcode.com/problems/spiral-matrix-iii/submissions/1350474465/?envType=
 https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equal-to-target/submissions/1351134623/
 1418. Display Table of Food Orders in a Restaurant
 https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/description/
+921. Minimum Add to Make Parentheses Valid
+https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/submissions/1355443314/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
