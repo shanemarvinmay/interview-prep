@@ -105,6 +105,8 @@ https://leetcode.com/problems/number-of-pairs-of-strings-with-concatenation-equa
 https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/description/
 921. Minimum Add to Make Parentheses Valid
 https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/submissions/1355443314/
+1396. Design Underground System
+https://leetcode.com/problems/design-underground-system/submissions/1355789691/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
