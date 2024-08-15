@@ -107,6 +107,8 @@ https://leetcode.com/problems/display-table-of-food-orders-in-a-restaurant/descr
 https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/submissions/1355443314/
 1396. Design Underground System
 https://leetcode.com/problems/design-underground-system/submissions/1355789691/
+1980. Find Unique Binary String
+https://leetcode.com/problems/find-unique-binary-string/submissions/1357001716/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
