@@ -111,6 +111,8 @@ https://leetcode.com/problems/design-underground-system/submissions/1355789691/
 https://leetcode.com/problems/find-unique-binary-string/submissions/1357001716/
 860. Lemonade Change
 https://leetcode.com/problems/lemonade-change/description/?envType=daily-question&envId=2024-08-15
+1415. The k-th Lexicographical String of All Happy Strings of Length n
+https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/submissions/1357864670/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
