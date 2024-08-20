@@ -115,6 +115,8 @@ https://leetcode.com/problems/lemonade-change/description/?envType=daily-questio
 https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/submissions/1357864670/
 1743. Restore the Array From Adjacent Pairs
 https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/submissions/1361932551/
+784. Letter Case Permutation
+https://leetcode.com/problems/letter-case-permutation/submissions/1362883846/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
