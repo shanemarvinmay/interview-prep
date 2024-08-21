@@ -117,6 +117,8 @@ https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strin
 https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/submissions/1361932551/
 784. Letter Case Permutation
 https://leetcode.com/problems/letter-case-permutation/submissions/1362883846/
+2294. Partition Array Such That Maximum Difference Is K
+https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/submissions/1363514783/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
