@@ -119,6 +119,8 @@ https://leetcode.com/problems/restore-the-array-from-adjacent-pairs/submissions/
 https://leetcode.com/problems/letter-case-permutation/submissions/1362883846/
 2294. Partition Array Such That Maximum Difference Is K
 https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/submissions/1363514783/
+3195. Find the Minimum Area to Cover All Ones I
+https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/submissions/1363893446/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
