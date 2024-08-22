@@ -123,6 +123,8 @@ https://leetcode.com/problems/partition-array-such-that-maximum-difference-is-k/
 https://leetcode.com/problems/find-the-minimum-area-to-cover-all-ones-i/submissions/1363893446/
 1833. Maximum Ice Cream Bars
 https://leetcode.com/problems/maximum-ice-cream-bars/description/
+701. Insert into a Binary Search Tree
+https://leetcode.com/problems/insert-into-a-binary-search-tree/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
