@@ -127,6 +127,8 @@ https://leetcode.com/problems/maximum-ice-cream-bars/description/
 https://leetcode.com/problems/insert-into-a-binary-search-tree/
 841. Keys and Rooms
 https://leetcode.com/problems/keys-and-rooms/
+230. Kth Smallest Element in a BST
+https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
