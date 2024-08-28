@@ -129,6 +129,8 @@ https://leetcode.com/problems/insert-into-a-binary-search-tree/
 https://leetcode.com/problems/keys-and-rooms/
 230. Kth Smallest Element in a BST
 https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
+2225. Find Players With Zero or One Losses
+https://leetcode.com/problems/find-players-with-zero-or-one-losses/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
