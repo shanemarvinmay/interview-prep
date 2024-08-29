@@ -131,6 +131,8 @@ https://leetcode.com/problems/keys-and-rooms/
 https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
 2225. Find Players With Zero or One Losses
 https://leetcode.com/problems/find-players-with-zero-or-one-losses/
+1448. Count Good Nodes in Binary Tree
+https://leetcode.com/problems/count-good-nodes-in-binary-tree/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
