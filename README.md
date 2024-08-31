@@ -133,6 +133,8 @@ https://leetcode.com/problems/kth-smallest-element-in-a-bst/description/
 https://leetcode.com/problems/find-players-with-zero-or-one-losses/
 1448. Count Good Nodes in Binary Tree
 https://leetcode.com/problems/count-good-nodes-in-binary-tree/
+1701. Average Waiting Time
+https://leetcode.com/problems/average-waiting-time/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
