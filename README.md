@@ -139,7 +139,8 @@ https://leetcode.com/problems/average-waiting-time/
 https://leetcode.com/problems/sort-characters-by-frequency/
 2275. Largest Combination With Bitwise AND Greater Than Zero
 https://leetcode.com/problems/largest-combination-with-bitwise-and-greater-than-zero/
-
+173. Binary Search Tree Iterator
+https://leetcode.com/problems/binary-search-tree-iterator/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
