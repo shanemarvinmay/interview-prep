@@ -32,7 +32,3 @@ class BSTIterator:
 # obj = BSTIterator(root)
 # param_1 = obj.next()
 # param_2 = obj.hasNext()
-'''
-173. Binary Search Tree Iterator
-https://leetcode.com/problems/binary-search-tree-iterator/
-'''
