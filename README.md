@@ -145,6 +145,8 @@ https://leetcode.com/problems/binary-search-tree-iterator/
 https://leetcode.com/problems/house-robber/description/?envType=study-plan-v2&envId=dynamic-programming
 62. Unique Paths
 https://leetcode.com/problems/unique-paths/
+1905. Count Sub Islands
+https://leetcode.com/problems/count-sub-islands/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
