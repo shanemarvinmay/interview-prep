@@ -151,6 +151,12 @@ https://leetcode.com/problems/count-sub-islands/
 https://leetcode.com/problems/minimum-number-of-steps-to-make-two-strings-anagram-ii/
 695. Max Area of Island
 https://leetcode.com/problems/max-area-of-island/
+1860. Incremental Memory Leak
+https://leetcode.com/problems/incremental-memory-leak/
+814. Binary Tree Pruning
+https://leetcode.com/problems/binary-tree-pruning/description/
+893. Groups of Special-Equivalent Strings
+https://leetcode.com/problems/groups-of-special-equivalent-strings/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
