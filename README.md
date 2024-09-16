@@ -157,6 +157,8 @@ https://leetcode.com/problems/incremental-memory-leak/
 https://leetcode.com/problems/binary-tree-pruning/description/
 893. Groups of Special-Equivalent Strings
 https://leetcode.com/problems/groups-of-special-equivalent-strings/
+1530. Number of Good Leaf Nodes Pairs
+https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
