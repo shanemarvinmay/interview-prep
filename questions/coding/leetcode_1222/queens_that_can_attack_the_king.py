@@ -70,9 +70,3 @@ class Solution:
     def get_y_diff(self, p1, p2):
         '''Returns the difference in cols (y)'''
         return p1[1] - p2[1]
-
-if __name__ == '__main__':
-    for i in range(2, 5):
-        for j in range(2, 5):
-            if i == 3 and j == 3: continue
-            print(f'[{i},{j}],', end='')
