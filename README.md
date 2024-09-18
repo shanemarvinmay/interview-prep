@@ -163,6 +163,8 @@ https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/
 https://leetcode.com/problems/where-will-the-ball-fall/
 986. Interval List Intersections
 https://leetcode.com/problems/interval-list-intersections/
+2966. Divide Array Into Arrays With Max Difference
+https://leetcode.com/problems/divide-array-into-arrays-with-max-difference/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
