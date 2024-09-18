@@ -161,6 +161,8 @@ https://leetcode.com/problems/groups-of-special-equivalent-strings/
 https://leetcode.com/problems/number-of-good-leaf-nodes-pairs/
 1706. Where Will the Ball Fall
 https://leetcode.com/problems/where-will-the-ball-fall/
+986. Interval List Intersections
+https://leetcode.com/problems/interval-list-intersections/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
