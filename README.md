@@ -171,6 +171,8 @@ https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parenthese
 https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-traversal/description/
 2336. Smallest Number in Infinite Set
 https://leetcode.com/problems/smallest-number-in-infinite-set/description/
+1248. Count Number of Nice Subarrays
+https://leetcode.com/problems/count-number-of-nice-subarrays/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
