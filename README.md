@@ -173,6 +173,8 @@ https://leetcode.com/problems/construct-binary-tree-from-preorder-and-postorder-
 https://leetcode.com/problems/smallest-number-in-infinite-set/description/
 1248. Count Number of Nice Subarrays
 https://leetcode.com/problems/count-number-of-nice-subarrays/
+1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number
+https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
