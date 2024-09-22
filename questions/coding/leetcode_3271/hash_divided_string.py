@@ -15,4 +15,3 @@ class Solution:
             # Total to number
             output.append(chr(total+97))
         return ''.join(output)
-
