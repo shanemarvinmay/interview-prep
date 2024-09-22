@@ -175,6 +175,8 @@ https://leetcode.com/problems/smallest-number-in-infinite-set/description/
 https://leetcode.com/problems/count-number-of-nice-subarrays/
 1850. Minimum Adjacent Swaps to Reach the Kth Smallest Number
 https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/description/
+386. Lexicographical Numbers
+https://leetcode.com/problems/lexicographical-numbers/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
