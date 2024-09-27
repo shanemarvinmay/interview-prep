@@ -179,6 +179,8 @@ https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-n
 https://leetcode.com/problems/lexicographical-numbers/
 513. Find Bottom Left Tree Value
 https://leetcode.com/problems/find-bottom-left-tree-value/
+2711. Difference of Number of Distinct Values on Diagonals
+https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
