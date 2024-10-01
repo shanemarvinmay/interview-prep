@@ -185,6 +185,8 @@ https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagona
 https://leetcode.com/problems/count-substrings-that-differ-by-one-character/
 641. Design Circular Deque
 https://leetcode.com/problems/design-circular-deque/?envType=daily-question&envId=2024-09-28
+791. Custom Sort String
+https://leetcode.com/problems/custom-sort-string/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
