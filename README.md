@@ -187,6 +187,8 @@ https://leetcode.com/problems/count-substrings-that-differ-by-one-character/
 https://leetcode.com/problems/design-circular-deque/?envType=daily-question&envId=2024-09-28
 791. Custom Sort String
 https://leetcode.com/problems/custom-sort-string/
+1497. Check If Array Pairs Are Divisible by k
+https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/?envType=daily-question&envId=2024-10-01
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
