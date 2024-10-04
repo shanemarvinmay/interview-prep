@@ -189,6 +189,8 @@ https://leetcode.com/problems/design-circular-deque/?envType=daily-question&envI
 https://leetcode.com/problems/custom-sort-string/
 1497. Check If Array Pairs Are Divisible by k
 https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/?envType=daily-question&envId=2024-10-01
+1004. Max Consecutive Ones III
+https://leetcode.com/problems/max-consecutive-ones-iii/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
