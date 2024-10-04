@@ -191,6 +191,8 @@ https://leetcode.com/problems/custom-sort-string/
 https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/?envType=daily-question&envId=2024-10-01
 1004. Max Consecutive Ones III
 https://leetcode.com/problems/max-consecutive-ones-iii/
+1570. Dot Product of Two Sparse Vectors
+https://leetcode.com/problems/dot-product-of-two-sparse-vectors/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
