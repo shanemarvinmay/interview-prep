@@ -14,15 +14,3 @@ def test_minRemoveToMakeValid(s, expected):
     got = sol.minRemoveToMakeValid(s)
 
     assert got == expected
-
-'''
-Input: s = 
-Output: 
-Explanation: "lee(t(co)de)" , "lee(t(c)ode)" would also be accepted.
-Example 2:
-
-Input: s = ""
-Output: ""
-Example 3:
-
-Output: ""'''
