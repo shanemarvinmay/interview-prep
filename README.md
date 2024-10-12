@@ -195,6 +195,8 @@ https://leetcode.com/problems/max-consecutive-ones-iii/
 https://leetcode.com/problems/dot-product-of-two-sparse-vectors/
 19. Remove Nth Node From End of List
 https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
+776. Split BST
+https://leetcode.com/problems/split-bst/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
