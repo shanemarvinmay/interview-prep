@@ -193,7 +193,8 @@ https://leetcode.com/problems/check-if-array-pairs-are-divisible-by-k/?envType=d
 https://leetcode.com/problems/max-consecutive-ones-iii/
 1570. Dot Product of Two Sparse Vectors
 https://leetcode.com/problems/dot-product-of-two-sparse-vectors/
-Leetcode 19!
+19. Remove Nth Node From End of List
+https://leetcode.com/problems/remove-nth-node-from-end-of-list/description/
 
 * [Data Structures](https://github.com/shanemarvinmay/python-algorithms/tree/master)
     * [Double Linked List](https://github.com/shanemarvinmay/python-algorithms/blob/master/Linked_List/doubly_linked_list.py)
