@@ -3,11 +3,11 @@ from questions.coding.leetcode_328.odd_even_linked_list import ListNode, Solutio
 import pytest
 
 @pytest.mark.parametrize('ll, expected, msg', [
-    # (None, None, 'Empty list'),
-    # (ListNode(1), ListNode(1), '1->None'),
-    # (ListNode(1, next=ListNode(2)), 
-    #  ListNode(1, next=ListNode(2)), 
-    #  '1->2->None' ),
+    (None, None, 'Empty list'),
+    (ListNode(1), ListNode(1), '1->None'),
+    (ListNode(1, next=ListNode(2)), 
+     ListNode(1, next=ListNode(2)), 
+     '1->2->None' ),
     (ListNode(1, next=ListNode(2, next=ListNode(3))), 
      ListNode(1, next=ListNode(3, next=ListNode(2))), 
      '1->2->3->None' ),

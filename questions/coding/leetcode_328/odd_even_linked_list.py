@@ -1,4 +1,5 @@
 from typing import Optional
+
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
@@ -40,7 +41,3 @@ class Solution:
             return
         self.even.next = new_node
         self.even = new_node
-'''
-328. Odd Even Linked List
-https://leetcode.com/problems/odd-even-linked-list/
-'''
