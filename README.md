@@ -22,6 +22,12 @@ This is where I am keeping track of the interview prep questions and studies I a
 * [HackerRank](https://www.hackerrank.com/domains/sql?filters%5Bdifficulty%5D%5B%5D=easy)
 * [Practice SQL](https://www.sql-practice.com/)
 
+## Solutions to add here:
+https://leetcode.com/problems/daily-temperatures/submissions/1418364258/?envType=company&envId=facebook&favoriteSlug=facebook-thirty-days&difficulty=MEDIUM&status=TO_DO
+https://leetcode.com/problems/find-leaves-of-binary-tree/submissions/1425994465/
+https://leetcode.com/problems/group-anagrams/submissions/1426004208/
+https://leetcode.com/problems/buildings-with-an-ocean-view/submissions/1426850655/
+
 ## Work to Redo
 ### Redo with Better Solution
 * [Leetcode 1442. Count Triplets That Can Form Two Arrays of Equal XOR](https://leetcode.com/problems/count-triplets-that-can-form-two-arrays-of-equal-xor/description/)
