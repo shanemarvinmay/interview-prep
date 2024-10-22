@@ -12,13 +12,3 @@ def test_findDiagonalOrder(m, expected):
     got = sol.findDiagonalOrder(m)
 
     assert got == expected
-
-'''
-Input: mat = 
-Output: 
-
-Example 2:
-
-Input: mat = 
-Output: 
-'''
