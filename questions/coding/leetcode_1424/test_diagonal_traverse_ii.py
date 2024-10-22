@@ -14,10 +14,6 @@ def test_findDiagonalOrder(m, expected):
     assert got == expected
 
 '''
-Input: nums = 
-
-Input: nums = 
-
 Constraints:
 1 <= nums.length <= 105
 1 <= nums[i].length <= 105
