@@ -1,9 +1,10 @@
-from algorithms_data_structures.fibonacci.fibonacci import fibonacci
+from algorithms_data_structures.fibonacci.fibonacci import fibonacci, fibonacci_recursive
 
 import pytest
 
 @pytest.mark.parametrize('n, expected', [
-    (5, 3), (-2, -1)
+    (6, 8), (-2, -1)
 ])
 def test_fibonacci(n, expected):
     assert fibonacci(n) == expected
+    assert fibonacci_recursive(n) == expected
