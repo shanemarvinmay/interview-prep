@@ -6,3 +6,5 @@ def insertion_sort(ar):
             if ar[j] > ar[idx]:
                 ar[idx], ar[j] = ar[j], ar[idx]
                 idx = j
+            else:
+                break
