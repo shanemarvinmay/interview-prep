@@ -2,7 +2,7 @@
 1. Define the problem space
 - ask specific questions and get constraints - define the scope of the project
     - who are our customers
-    - need to interact with existing system?
+    - Do we need to interact with existing system?
     - reliability need
     - data consistence/freshness need
     - storage and bandwidth need
@@ -26,7 +26,7 @@
         - How should the system handle failures?
     - Trade-offs:
         - Should we prioritize a faster response or more reliability?
-    - Ask: What are the most import features of this product/system?
+    - Ask: **What are the most import features of this product/system?**
     - Ask: What is the average traffic volumn?
     - Make sure you found all the functional and non-functional requirements
 
@@ -63,3 +63,36 @@ Good to know:
 
 5. Review and Wrap up
 - make sure your design covers all the requirements (although you should be doing this through the interview)
+
+---
+
+vertical scaling: upgrade single computer (more memory, fast cpu/gpu, etc)
+- doesn't need load balancing
+- single point of failure
+- inter process communication (doesn't need to talk to other computers, since its all on one machine)
+- data consistency is way easier
+- hardware becomes limited  
+horizontal scaling: more machines
+- needs load balancing
+- resilient
+- Inter network calls (rpc) between machines (? services ?)
+- data consistence is harder and more compliated 
+- hardware isn't nearly as limited
+
+Avoid single point of failure: have backups (servers, data, etc)
+
+? master-slave architecture ?
+
+micro service architecture
+- each service gets scaled at a different rate that (depending on need)
+
+Distributed service  (partition)
+multiple data centers 
+- in case one goes down
+- handle traffic quickly
+^ load balancing will route traffic to different data center/kubernetes pods based on traffic and predicted response time
+
+Decoupling the System (seperating concerns)
+
+
+extensible
