@@ -25,8 +25,8 @@
         - High availability and scalability
         - Fault tollerance
         - How should the system handle failures?
-    - Trade-offs:
-        - Should we prioritize a faster response or more reliability?
+        - Trade-offs:
+            - Should we prioritize a faster response or more reliability?
     - Ask: **What are the most import features of this product/system?**
     - Ask: What is the average traffic volumn?
     - Make sure you found all the functional and non-functional requirements
@@ -42,7 +42,7 @@
 3. Deep Dive into the design
 - go into each component and talk about why you chose it for the design
     - data speed
-    - dast storage
+    - data storage
     - load balancing
 - **! Explain pros and cons !**
 
@@ -67,19 +67,6 @@ Good to know:
 
 ---
 
-vertical scaling: upgrade single computer (more memory, fast cpu/gpu, etc)
-- doesn't need load balancing
-- single point of failure
-- inter process communication (doesn't need to talk to other computers, since its all on one machine)
-- data consistency is way easier
-- hardware becomes limited  
-horizontal scaling: more machines
-- needs load balancing
-- resilient
-- Inter network calls (rpc) between machines (? services ?)
-- data consistence is harder and more compliated 
-- hardware isn't nearly as limited
-
 Avoid single point of failure: have backups (servers, data, etc)
 
 ? master-slave architecture ?
@@ -95,5 +82,4 @@ multiple data centers
 
 Decoupling the System (seperating concerns)
 
-
-extensible
+? Extensible ?
