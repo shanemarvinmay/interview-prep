@@ -82,3 +82,26 @@ multiple data centers
 Decoupling the System (seperating concerns)
 
 ? Extensible ?
+
+---
+
+# Consistent Hashing
+- Load Balancing
+- **Load should be distributed evenly across all servers**
+
+## Simple Hashing
+```
+n = num servers
+Hash(req_id) -> 0<= hash < M
+hash % n = server[i] that gets the request
+```
+- If this hashing occures with user data, then the same user will get routed to the same server.
+    - This means we can save the user data in cache (ram) for faster response times.
+
+## Consistent Hashing
+- Servers are assigned *virtual nodes*
+    - *virtual nodes* are points on *the ring*
+- Requests are hashed and routed somewhere on the ring.
+- The request get routed to the next virtual node on the ring, which then gets routed to the server (that the virtual node belongs too)
+
+
