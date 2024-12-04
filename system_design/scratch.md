@@ -1,12 +1,13 @@
 5 Steps
 1. Define the problem space
 - ask specific questions and get constraints - define the scope of the project
-    - who are our customers
+    - Who are our customers?
     - Do we need to interact with existing system?
-    - reliability need
-    - data consistence/freshness need
-    - storage and bandwidth need
-- **? Functional and Non-Functional Requirements ?**
+    - Reliability need
+    - Data consistence/freshness need
+    - Storage and bandwidth need
+- **Functional and Non-Functional Requirements
+÷‘º**
     - **Functional Requirements: functions that a system must be able to do.**
         - "Features that directly fulfill the purpose of the system."
         - Features, workflows, user interactions
