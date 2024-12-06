@@ -105,4 +105,16 @@ hash % n = server[i] that gets the request
 - Requests are hashed and routed somewhere on the ring.
 - The request get routed to the next virtual node on the ring, which then gets routed to the server (that the virtual node belongs too)
 
+---
 
+# Message/Task Queue
+
+- Priority Queue of tasks stored in memory. 
+- Keeps track of which tasks are done.
+    - Heartbeat to see what servers are still up.
+        - if server goes down, the jobs the server was suppose to do will be redistributed to the rest of the servers.
+
+- Examples of Message/Task Queues in the real world:
+    - Rabbit MQ
+    - Zero MQ
+    - JMS (Java Messaging System)
