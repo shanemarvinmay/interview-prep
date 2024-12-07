@@ -118,3 +118,18 @@ hash % n = server[i] that gets the request
     - Rabbit MQ
     - Zero MQ
     - JMS (Java Messaging System)
+
+
+---
+
+# Monolith vs Micro Services Architecture
+| Monolith | Micro Service |
+|:----------:|:----------:|
+| +Faster | +Easier to scale |
+| +Less Complex | +Easier to develop features in parrallel |
+| -Single point of failure (generally) | +Can scale individual features/services |
+| -Harder to onboard | +Easier to onboard |
+| -Harder to test (integration test) | |
+
+* Microservices are generally used with large scale systems
+* If one microservice is only talking to one other micro service, then they should have been one service altogether.
