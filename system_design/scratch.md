@@ -133,3 +133,8 @@ hash % n = server[i] that gets the request
 
 * Microservices are generally used with large scale systems
 * If one microservice is only talking to one other micro service, then they should have been one service altogether.
+
+---
+
+# Sharding Data
+- When there is too much data and you need to access/query quickly
