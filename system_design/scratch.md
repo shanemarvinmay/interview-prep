@@ -138,3 +138,21 @@ hash % n = server[i] that gets the request
 
 # Sharding Data
 - When there is too much data and you need to access/query quickly
+- Based on a hashed key
+- **Data consistency is hard**
+- Data availability is also difficult
+- Index the data
+
+-Joins are hard because you need to go across shards to get all the data
+    
+- ? Use consistant hashing to get around this ?
+
+If a shard gets too big. Break it down into smaller shards.
+- This is handled by shard manager
+
+Master-Slave
+- All reads come from the slaves
+- All writes go to the master
+- If the master goes down, a new masters will be made out of the slaves
+
+*Try NoSQL and Indexing before sharding*
