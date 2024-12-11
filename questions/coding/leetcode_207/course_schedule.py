@@ -1,36 +1,34 @@
 from typing import List
-from collections import deque
+from collections import defaultdict
 class Solution:
     def canFinish(self, num_courses: int, prereqs: List[List[int]]) -> bool:
-        covered = set()
-        hm = dict()
-
+        UNVISITED = 0 # No idea, I need to look into this.
+        VISITING = 1 # Currently looking into this.
+        VISITED = 2 # All good!
+        states = [UNVISITED] * num_courses
+        
         # building hash map
-        for i in range(num_courses):
-            hm[i] = set()
-            covered.add(i)
+        hm = defaultdict(list)
         for course, prereq in prereqs:
-            if course in covered:
-                covered.remove(course)
-            hm[course].add(prereq)
+            hm[prereq].append(course)
+        # dfs
+        def cycle_detection(course):
+            if states[course] == VISITED: return False
+            elif states[course] == VISITING:
+                # Cycle detected!
+                return True
+            
+            states[course] = VISITING
 
-        def bfs(course, seen=None):
-            if seen is None:
-                seen = set()
-            q = deque([course])
-            while q:
-                v = q.popleft()
-                if v in covered: continue
-                covered.add(v)
-                if v in seen: return True
-                seen.add(v)
-                for prereq in hm[v]:
-                    q.append(prereq)
+            for neighbor in hm[course]:
+                if cycle_detection(neighbor):
+                    return True
+            
+            states[course] = VISITED
             return False
         
-        for course in hm:
-            if course in covered: continue
-            cycle_detected = bfs(course)
-            if cycle_detected: return False
+        for course in range(num_courses):
+            if cycle_detection(course): 
+                return False
         
-        return len(covered) == num_courses
+        return True
