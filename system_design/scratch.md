@@ -157,7 +157,6 @@ Master-Slave
 
 *Try NoSQL and Indexing before sharding*
 
-
 ---
 
 # Caching
