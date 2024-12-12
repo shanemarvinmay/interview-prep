@@ -156,3 +156,24 @@ Master-Slave
 - If the master goes down, a new masters will be made out of the slaves
 
 *Try NoSQL and Indexing before sharding*
+
+
+---
+
+# Caching
+- "Reduce duplicate work by using memory."
+- "Reduce latency with more storage."
+- 2 Places to have cache
+    1. Backend (db/server)
+        - Store db results in cache on server
+        - ? db has cache ?
+    2. Frontend (client)
+        - Cache results
+- ## Caching Policy
+    - What to store in cache?
+    - What, and when, to evict? (LRU, LFU, etc)
+## Thashing:
+- When many loads and evictions occure due to a bad caching policy.
+- **Data consistency** how stale is the data in the cache.
+    - **Eventual consistency**
+        - When, and how often, do you update the cache?
