@@ -165,9 +165,15 @@ Master-Slave
 - 2 Places to have cache
     1. Backend (db/server)
         - Store db results in cache on server
+            - Like an in-memory hashmap
         - ? db has cache ?
     2. Frontend (client)
         - Cache results
+    3. Global System, Cache Server
+        - Redis
+        - Interact with this cache server with get and post requests through an api
+        - The benefit to this is that you can scale independently
+    - All 3 of these options are used in the real world.
 - ## Caching Policy
     - What to store in cache?
     - What, and when, to evict? (LRU, LFU, etc)
