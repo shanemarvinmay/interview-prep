@@ -196,3 +196,8 @@ Master-Slave
 **Backups**
 **Master-Slave**
 - Client failing is not as bad as a backend service failing.
+
+---
+
+# CDN
+Load files you want to server in cache. Have cache servers spread out to where your users are.
