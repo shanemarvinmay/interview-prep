@@ -182,3 +182,17 @@ Master-Slave
 - **Data consistency** how stale is the data in the cache.
     - **Eventual consistency**
         - When, and how often, do you update the cache?
+
+---
+
+# Single Point of failure
+**Duplication** is a good way to get around this.
+- duplicate *services* and *data*
+    - Master-Slave: master gets write requests, slaves handle read requests
+- Duplicate Load Balances (Gateways)
+    - DNS will route to different load balancers
+- Multiple regions in case an entire region goes down.
+    - Also improves latency
+**Backups**
+**Master-Slave**
+- Client failing is not as bad as a backend service failing.
