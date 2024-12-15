@@ -9,8 +9,9 @@ import pytest
 def test_maxAverageRatio(classes, extra, expected):
     sol = Solution()
 
-    got = sol.maxAverageRatio(classes, extra) * 100
-    got = round(got, 2)
+    got = sol.maxAverageRatio(classes, extra)
+    got = round(got * 1000, 2)
+    expected = round(expected * 1000, 2)
 
-    assert got == round(expected * 100, 2)
+    assert got == expected
 

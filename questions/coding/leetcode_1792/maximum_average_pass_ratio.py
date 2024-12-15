@@ -4,24 +4,25 @@ class Solution:
     def maxAverageRatio(self, classes: List[List[int]], extraStudents: int) -> float:
         heap = []
         for pas, tot in classes:
-            per = round(pas/tot * 100, 5)
-            heapq.heappush(heap, (tot, per, pas))
+            potential = ((pas+1) / (tot+1))
+            cur = (pas/tot)
+            impact = ((pas+1) / (tot+1)) - (pas/tot)
+            heapq.heappush(heap, (impact * -1, tot, pas))
         
         while extraStudents:
-            tot, per, pas = heapq.heappop(heap)
-            if per == 1:
-                tot = 100_000
-                pas = 100_000
-            else:
-                tot += 1
-                pas += 1
-                extraStudents -= 1
-                per = round(pas/tot * 100, 5)
-            heapq.heappush(heap, (tot, per, pas))
+            impact, tot, pas = heapq.heappop(heap)
+            if impact == 0: 
+                heapq.heappush(heap, (impact * -1, tot, pas))
+                break
+            tot += 1
+            pas += 1
+            extraStudents -= 1
+            impact = ((pas+1) / (tot+1)) - (pas/tot)
+            heapq.heappush(heap, (impact * -1, tot, pas))
             
-        tot = 0
-        for _, percent, _ in heap:
-            tot += percent
+        total = 0
+        for impact, tot, pas in heap:
+            total += (pas / tot)
         
-        avg = tot / len(heap)
-        return avg / 100
+        avg = total / len(heap)
+        return avg
