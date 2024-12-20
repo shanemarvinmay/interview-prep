@@ -201,3 +201,32 @@ Master-Slave
 
 # CDN
 Load files you want to server in cache. Have cache servers spread out to where your users are.
+
+---
+
+# Publisher Subscriber Model
+- **Producer**: puts messages in the message broker
+- **Subscriber**: subscribes/listens to certain messages from the message broker
+## Benefits
+* Decouple
+    * Parent services can just give requests to the message broker, and if it's successful added, it can respond with a 200 and move on to the next requests. The message broker will worry about sending it down stream
+    * If a service is down, the 'message broker' will backoff and retry.
+        * So parent services don't have to sit and wait for a child service to respond. This is useful when there are many child services downstream and maybe only 1 fails.
+* Simplier
+* More Scalable
+    * You can remove/add services
+    * Scale individual services
+## Downsides
+* Data Consistency
+    * Hard to ensure data consistency across decoupled services.
+        * So not good for financial services.
+
+*Would be good for something like social media posts.*
+
+- **Events Driven Services**
+- **Message Broker**
+    - a.k.a. **Event Bus**
+    - **Kafka** is a popular example
+    - stores messages persistently
+
+* Bases for *Event Driven Architecture*.
