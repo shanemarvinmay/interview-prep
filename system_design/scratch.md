@@ -230,3 +230,17 @@ Load files you want to server in cache. Have cache servers spread out to where y
     - stores messages persistently
 
 * Bases for *Event Driven Architecture*.
+
+---
+
+# Event Driven Architecture
+* Used by: Git, React, Node.js, and games.
+* Services save events in local db
+* - Con: Data consistency
+* + Pro: Easy roll back (In time b/c of events)
+* + Pro: Easy replacement of services
+    * New services subscribe to message broker
+    * Transfer event db to new service
+* Data intent is stored in the local event db
+* - Con: Hidden flow
+* - Con: Difficult to move out of (migrate)
