@@ -1,17 +1,16 @@
-5 Steps
-1. Define the problem space
+# 5 Steps for a System's Design Interview
+## 1. Define the problem space
 - ask specific questions and get constraints - define the scope of the project
     - Who are our customers?
     - Do we need to interact with existing system?
     - Reliability need
     - Data consistence/freshness need
     - Storage and bandwidth need
-- **Functional and Non-Functional Requirements
-÷‘º**
+- **Functional and Non-Functional Requirements**
     - **Functional Requirements: functions that a system must be able to do.**
         - "Features that directly fulfill the purpose of the system."
         - Features, workflows, user interactions
-        - Actions that takes place: 
+        - Actions that take place: 
             - User must be able to create an account
             - Customer has to be able to make an order
             - System must be able to send an order confirmation to the user
@@ -32,14 +31,14 @@
     - Make sure you found all the functional and non-functional requirements
 
 
-2. Design the System at a high level
+## 2. Design the System at a high level
 - high level diagram of system
 - ? 1 or more APIs for each system requirement ?
-    - **! No which type of API to use and why !**
+    - **! Know which type of API to use and why !**
         - soap, rest, rpc, graphql?
 
 
-3. Deep Dive into the design
+## 3. Deep Dive into the design
 - go into each component and talk about why you chose it for the design
     - data speed
     - data storage
@@ -47,23 +46,22 @@
 - **! Explain pros and cons !**
 
 
-4. Identify bottlenecks and scaling opportunities
-- how to improve robustness/resiliancy?
-    - is there a single point of failure?
-    - is data so important that we need duplicates stored elsewhere? if so, how important is it that the data is consistent?
-- do we need to store data in country (maybe for legal reasons)
-- is there peak times of usage
-- how to scale system to support 10x more users?
+## 4. Identify bottlenecks and scaling opportunities
+- How to improve robustness/resiliancy?
+    - Is there a single point of failure?
+    - Is data so important that we need duplicates stored elsewhere? if so, how important is it that the data is consistent?
+- Do we need to store data in country (maybe for legal reasons)
+- Are there peak times of usage
+- How to scale system to support 10x more users?
 
 Good to know:
 - horizontal sharding
-- cdn: content delivery networks
 - caching
 - rate limiting
 - sql vs no sql databases
 
-5. Review and Wrap up
-- make sure your design covers all the requirements (although you should be doing this through the interview)
+## 5. Review and Wrap up
+- Make sure your design covers all the requirements (although you should be doing this through the interview)
 
 ---
 
