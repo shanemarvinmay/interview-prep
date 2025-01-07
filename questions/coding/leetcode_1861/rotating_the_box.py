@@ -36,35 +36,3 @@ class Solution:
             res_col -= 1
 
         return res
-        # res = []
-        # for col in range(len(boxGrid[0])):
-        #     res.append(['.' for _ in range(len(boxGrid))])
-        
-        # res_col = len(boxGrid) - 1
-        # for row in range(len(boxGrid)):
-        #     for col in range(len(boxGrid[0])):
-        #         res[col][res_col] = boxGrid[row][col]
-        #     res_col -= 1
-        
-        # # falling stones from bottom up
-        # # col by col
-        # COLS = len(res[0])
-        # ROWS = len(res)
-        # for col in range(COLS):
-        #     stone = ROWS - 1
-        #     # find first stone
-        #     while stone > -1:
-        #         while stone > -1 and res[stone][col] != '#':
-        #             stone -= 1
-            
-        #         # find where stops
-        #         stop = stone + 1
-        #         while stop < ROWS and res[stop][col] == '.':
-        #             stop += 1
-        #         stop -= 1
-
-        #         # swap 'em
-        #         res[stone][col], res[stop][col] = res[stop][col], res[stone][col]
-        #         stone -= 1
-            
-        # return res
