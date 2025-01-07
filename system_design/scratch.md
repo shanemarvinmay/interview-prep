@@ -65,7 +65,7 @@ Good to know:
 
 ---
 
-Avoid single point of failure: have backups (servers, data, etc)
+# Avoid single point of failure: have backups (servers, data, etc)
 
 ? master-slave architecture ?
 
@@ -91,7 +91,7 @@ Decoupling the System (seperating concerns)
 ## Simple Hashing
 ```
 n = num servers
-Hash(req_id) -> 0<= hash < M
+Hash(req_id) -> 0 <= hash < M
 hash % n = server[i] that gets the request
 ```
 - If this hashing occures with user data, then the same user will get routed to the same server.
@@ -130,20 +130,19 @@ hash % n = server[i] that gets the request
 | -Harder to test (integration test) | |
 
 * Microservices are generally used with large scale systems
-* If one microservice is only talking to one other micro service, then they should have been one service altogether.
+* *If one microservice is only talking to one other micro service, then they should have been one service altogether.*
 
 ---
 
 # Sharding Data
 - When there is too much data and you need to access/query quickly
-- Based on a hashed key
+- Index the data, based on a hashed key
 - **Data consistency is hard**
 - Data availability is also difficult
-- Index the data
 
--Joins are hard because you need to go across shards to get all the data
+- Joins are hard because you need to go across shards to get all the data
     
-- ? Use consistant hashing to get around this ?
+    - ? Use consistant hashing to get around this ?
 
 If a shard gets too big. Break it down into smaller shards.
 - This is handled by shard manager
@@ -160,7 +159,7 @@ Master-Slave
 # Caching
 - "Reduce duplicate work by using memory."
 - "Reduce latency with more storage."
-- 2 Places to have cache
+- 3 Places to have cache
     1. Backend (db/server)
         - Store db results in cache on server
             - Like an in-memory hashmap
@@ -191,15 +190,19 @@ Master-Slave
     - DNS will route to different load balancers
 - Multiple regions in case an entire region goes down.
     - Also improves latency
+
 **Backups**
+
 **Master-Slave**
-- Client failing is not as bad as a backend service failing.
+
+*Client failing is not as bad as a backend service failing (usually).*
 
 ---
 
 # CDN
-Load files you want to server in cache. Have cache servers spread out to where your users are.
+Load files you want to serve in cache. Have cache servers spread out to where your users are.
 
+---
 ---
 
 # Publisher Subscriber Model
@@ -207,7 +210,7 @@ Load files you want to server in cache. Have cache servers spread out to where y
 - **Subscriber**: subscribes/listens to certain messages from the message broker
 ## Benefits
 * Decouple
-    * Parent services can just give requests to the message broker, and if it's successful added, it can respond with a 200 and move on to the next requests. The message broker will worry about sending it down stream
+    * Parent services can just give requests to the message broker, and if it's successfully added, it can respond with a 200 and move on to the next requests. The message broker will worry about sending it down stream
     * If a service is down, the 'message broker' will backoff and retry.
         * So parent services don't have to sit and wait for a child service to respond. This is useful when there are many child services downstream and maybe only 1 fails.
 * Simplier
@@ -224,7 +227,7 @@ Load files you want to server in cache. Have cache servers spread out to where y
 - **Events Driven Services**
 - **Message Broker**
     - a.k.a. **Event Bus**
-    - **Kafka** is a popular example
+    - **Kafka** is a popular example of an event bus
     - stores messages persistently
 
 * Bases for *Event Driven Architecture*.
