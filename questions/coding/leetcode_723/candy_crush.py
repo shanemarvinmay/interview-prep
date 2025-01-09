@@ -51,6 +51,16 @@ class Solution:
             # Doing the crushing
             for r, c in crush:
                 board[r][c] *= -1
+            # Dropping
+            for _, c in crush:
+                i = ROWS - 1
+                while i > -1 and board[i][c] > 0: i -= 1
+                j = i - 1
+                while j > -1:
+                    board[i][c], board[j][c] = board[j][c], board[i][c]
+                    i -= 1
+                    j -= 1
+
             return crushed
                     
         while crushed:
