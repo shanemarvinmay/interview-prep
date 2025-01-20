@@ -262,3 +262,28 @@ https://leetcode.com/problems/split-bst/description/
 * [interview-prep](https://github.com/shanemarvinmay/interview-prep)
 * [python-algorithms](https://github.com/shanemarvinmay/python-algorithms/tree/master)
 * [coding_problems](https://github.com/shanemarvinmay/coding_problems)
+
+
+# Path
+## DSA (medium only)
+* ! Meta Questions!
+* Trees
+    * ! Lowest common ancestor ! 
+    * other tree question
+* Graphs
+* Binary search questions
+* Dynamic
+* Monotomic stack
+* Combinations and permutation
+
+* ! Do again Quesetions !
+    * Dont understand well or couldn't solve in 20 min
+
+## System Design - ML Info
+* Review Logan's Doc
+* Watch videos Logan sent
+* Recommendation System Design (might be popular)
+
+## Behavorial
+* Review Logan's doc
+    * Do one a day after screening
