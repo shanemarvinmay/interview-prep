@@ -266,7 +266,7 @@ https://leetcode.com/problems/split-bst/description/
 
 # Path
 ## DSA (medium only)
-* ! Meta Questions!
+* ! Meta Questions !
 * Trees
     * ! Lowest common ancestor ! 
     * other tree question
