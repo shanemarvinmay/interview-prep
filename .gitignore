@@ -161,3 +161,6 @@ cython_debug/
 .vscode/settings.json
 questions/coding/.DS_Store
 questions/coding/.DS_Store
+
+# Exclude data extraction
+machine_learning/data/stock_data.ipynb
